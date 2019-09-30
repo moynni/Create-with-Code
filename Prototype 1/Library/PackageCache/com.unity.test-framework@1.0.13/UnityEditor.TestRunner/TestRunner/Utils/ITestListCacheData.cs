@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5f4fb8854437bbe885edae8d5898ff5765d9df4d775b5d9f531b34b209364a8
-size 313
+using System.Collections.Generic;
+using UnityEngine.TestRunner.TestLaunchers;
+using UnityEngine.TestTools;
+
+namespace UnityEditor.TestTools.TestRunner
+{
+    interface ITestListCacheData
+    {
+        List<TestPlatform> platforms { get; }
+        List<RemoteTestResultDataWithTestData> cachedData { get; }
+    }
+}
